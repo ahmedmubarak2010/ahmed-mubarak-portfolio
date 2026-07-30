@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Mubarak - Data Analyst, Full-Stack Web Developer, DevOps & Automation Specialist Portfolio Website. Pharaoh of the Digital Age.">
+    <title>Ahmed Mubarak | Portfolio</title>
+    <link rel="icon" type="image/jpg" href="assets\img.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar-wrapper">
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-brand">
+                <img src="assets/img.jpg" onerror="this.onerror=null; this.src='assets/avatar.svg';" alt="Ahmed Mubarak" class="brand-avatar">
+                <span>Ahmed Mubarak</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#terminal" class="nav-link">Terminal</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Mobile Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-bg-glow cyan"></div>
+        <div class="hero-bg-glow gold"></div>
+
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <i class="fas fa-eye"></i> 𓂀 『Pharaoh of the Digital Age』
+                </div>
+                <h1>Hi, I'm <span class="gold-text">Ahmed Mubarak</span></h1>
+                
+                <div class="typing-container">
+                    <span id="typingText"></span>
+                    <span class="typing-cursor"></span>
+                </div>
+
+                <p class="hero-description">
+                    Passionate Data Analyst & Full-Stack Developer skilled in turning complex datasets into powerful visual insights and crafting high-performance web applications with Python, React, SQL, Linux & Automation tools.
+                </p>
+
+                <div class="hero-buttons">
+                    <button onclick="triggerCVModal()" class="btn btn-gold">
+                        <i class="fas fa-download"></i> Download CV
+                    </button>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/ahmedmubarak2010" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-mubarak-8564aa303" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:mubarakxahmed2010@gmail.com" class="social-link" title="Gmail">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/message/45YZ4FUMDMEJN1" target="_blank" class="social-link" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/+201553007202" target="_blank" class="social-link" title="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://discord.com" target="_blank" onclick="copyDiscordHandle(event)" class="social-link" title="Discord (mubarak3_3)">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-frame">
+                    <img src="assets/img.jpg" onerror="this.onerror=null; this.src='assets/avatar.svg';" alt="Ahmed Mubarak Profile" class="avatar-img">
+                </div>
+                <div class="hero-badge-float top-right">
+                    <i class="fas fa-chart-line" style="color: var(--gold);"></i> Data Analytics & Viz
+                </div>
+                <div class="hero-badge-float bottom-left">
+                    <i class="fas fa-terminal" style="color: var(--primary);"></i> Linux & Automation
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="stats-strip">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Data Reports & Dashboards</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Web Apps & Interfaces</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">n8n Automated Workflows</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Data & Code Accuracy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Tech Stack & Expertise</span>
+                <h2>My Technical Skills</h2>
+            </div>
+
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="data">Data Analytics & Stats</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="devops">DevOps & Security</button>
+                <button class="filter-btn" data-filter="tools">Automation & Design</button>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid">
+
+                <div class="skill-card gold-icon" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-category-tag">CORE PROGRAMMING & DATA</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Data Analysis, Scripting & Viz</span>
+                        <span class="badge badge-gold">Expert</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Pandas</div>
+                            <div class="skill-category-tag">DATA MANIPULATION</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Dataframes & Cleaning</span>
+                        <span class="badge badge-gold">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">NumPy</div>
+                            <div class="skill-category-tag">NUMERICAL COMPUTING</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Matrix & Multidimensional</span>
+                        <span class="badge badge-gold">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Statistics</div>
+                            <div class="skill-category-tag">MATHEMATICAL ANALYSIS</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Hypothesis & Probability</span>
+                        <span class="badge badge-gold">Proficient</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Matplotlib</div>
+                            <div class="skill-category-tag">DATA VISUALIZATION</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Custom Plots & Figures</span>
+                        <span class="badge badge-gold">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-category-tag">DATABASE QUERYING</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Complex Joins & Aggregations</span>
+                        <span class="badge badge-gold">Expert</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Database Management</div>
+                            <div class="skill-category-tag">RELATIONAL DATABASES</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Schema & Performance</span>
+                        <span class="badge badge-gold">Proficient</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="web">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-category-tag">SEMANTIC MARKUP</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Accessibility & SEO</span>
+                        <span class="badge">Expert</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="web">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-category-tag">MODERN STYLING</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Flexbox, Grid & Glassmorphism</span>
+                        <span class="badge">Expert</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="web">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-category-tag">CLIENTSIDE LOGIC</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>ES6+, Async/Await & APIs</span>
+                        <span class="badge">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="web">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">React</div>
+                            <div class="skill-category-tag">FRONTEND FRAMEWORK</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Hooks, Components & State</span>
+                        <span class="badge">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="web">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Java</div>
+                            <div class="skill-category-tag">BACKEND & OOP</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Data Structures & APIs</span>
+                        <span class="badge">Proficient</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">VMware</div>
+                            <div class="skill-category-tag">VIRTUALIZATION</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>VM Lab Setup & Config</span>
+                        <span class="badge">Proficient</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Kali Linux</div>
+                            <div class="skill-category-tag">CYBERSECURITY OS</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Bash Scripting & Tools</span>
+                        <span class="badge">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="skill-category-tag">VERSION CONTROL</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Branching & Collaboration</span>
+                        <span class="badge">Expert</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Docker</div>
+                            <div class="skill-category-tag">CONTAINERIZATION</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Containers & Compose</span>
+                        <span class="badge">Proficient</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">n8n Automation</div>
+                            <div class="skill-category-tag">WORKFLOW AUTOMATION</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Webhooks, APIs & Pipelines</span>
+                        <span class="badge badge-gold">Expert</span>
+                    </div>
+                </div>
+
+                <div class="skill-card gold-icon" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div>
+                            <div class="skill-name">Canva Design</div>
+                            <div class="skill-category-tag">VISUAL BRANDING</div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>UI Graphic & Content Design</span>
+                        <span class="badge badge-gold">Advanced</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Portfolio Showcase</span>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="skills-filter projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data">Data Analytics</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="n8n">n8n Automation</button>
+                <button class="filter-btn" data-filter="security">Security & Tools</button>
+            </div>
+
+            <div class="projects-grid">
+
+                
+
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <span class="badge project-category-badge">Web Development</span>
+                        <img src="assets\ERP-Product-App.png" onerror="this.onerror=null; this.src='assets/project-web.svg';" alt="React & Java Web App" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">ERP Product App</h3>
+                        <p class="project-desc">
+                            A modern inventory and product management web application featuring CRUD operations, search functionality, category filtering, responsive design, and Local Storage support for efficient product management.
+
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-tag">HTML5</span>
+                            <span class="tool-tag">JavaScript</span>
+                            <span class="tool-tag">CSS3</span>
+                            <span class="tool-tag">Git & GitHub</span>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="openProjectModal('ERP Product App', 'Web Development', 'A modern inventory and product management web application featuring CRUD operations, search functionality, category filtering, responsive design, and Local Storage support for efficient product management.', 'React, JavaScript, Java, HTML5, CSS3', 'https://erp-product-app.vercel.app/', 'https://github.com/ahmedmubarak2010/ERP-Product-App')" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://github.com/ahmedmubarak2010/ERP-Product-App" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <span class="badge project-category-badge">Web Development</span>
+                        <img src="assets\To-Do List.png" onerror="this.onerror=null; this.src='assets/project-web.svg';" alt="React & Java Web App" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">To-Do List</h3>
+                        <p class="project-desc">
+                            A modern and responsive To-Do List application that helps users organize daily tasks with notes, local storage, and a clean user-friendly interface.
+
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-tag">HTML5</span>
+                            <span class="tool-tag">JavaScript</span>
+                            <span class="tool-tag">CSS3</span>
+                            <span class="tool-tag">Git & GitHub</span>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="openProjectModal('To-Do List', 'Web Development', 'A modern and responsive To-Do List application that helps users organize daily tasks with notes, local storage, and a clean user-friendly interface.', 'React, JavaScript, Java, HTML5, CSS3', 'https://to-do-list-eight-zeta-65.vercel.app/', 'https://github.com/ahmedmubarak2010/To-Do-List')" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://github.com/ahmedmubarak2010/To-Do-List" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-img-wrapper">
+                        <span class="badge project-category-badge">Web Development</span>
+                        <img src="assets\Age Calculator.png" onerror="this.onerror=null; this.src='assets/project-web.svg';" alt="React & Java Web App" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Age Calculator</h3>
+                        <p class="project-desc">
+                            A modern and responsive Age Calculator that accurately calculates age in years, months, and days with input validation and a clean user-friendly interface.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-tag">HTML5</span>
+                            <span class="tool-tag">JavaScript</span>
+                            <span class="tool-tag">CSS3</span>
+                            <span class="tool-tag">Git & GitHub</span>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="openProjectModal('Age Calculator', 'Web Development', 'A modern and responsive Age Calculator that accurately calculates age in years, months, and days with input validation and a clean user-friendly interface.', 'React, JavaScript, Java, HTML5, CSS3', 'https://age-calculator-wheat-gamma.vercel.app/', 'https://github.com/ahmedmubarak2010/Age-Calculator')" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://github.com/ahmedmubarak2010/Age-Calculator" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="python">
+                    <div class="project-img-wrapper">
+                        <span class="badge badge-gold project-category-badge">Python</span>
+                        <img src="assets/Zombie Survival Quiz Game.png" onerror="this.onerror=null; this.src='assets/project-python.svg';" alt="Python Data Game Project" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Zombie Survival Quiz Game</h3>
+                        <p class="project-desc">
+                            An interactive text-based zombie survival game built with Python, featuring branching choices, quiz challenges, random events, and a dynamic scoring system.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">time</span>
+                            <span class="tool-tag">random</span>
+                            <span class="tool-tag">CLI</span>
+                            <span class="tool-tag">Git & GitHub</span>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="openProjectModal('Zombie Survival Quiz Game', 'Python', 'An interactive text-based zombie survival game built with Python, featuring branching choices, quiz challenges, random events, and a dynamic scoring system.', 'Python, Git & GitHub , time, random , CLI', 'https://github.com/ahmedmubarak2010/Zombie-Survival-Quiz-Game', 'https://github.com/ahmedmubarak2010/Zombie-Survival-Quiz-Game')" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://github.com/ahmedmubarak2010/Zombie-Survival-Quiz-Game" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data">
+                    <div class="project-img-wrapper">
+                        <span class="badge badge-gold project-category-badge">Data Analytics</span>
+                        <img src="assets\image.png" onerror="this.onerror=null; this.src='assets/project-data.svg';" alt="E-Commerce Data Analytics" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Food Delivery Data Analysis</h3>
+                        <p class="project-desc">
+                            A comprehensive data analytics project exploring food delivery operations, customer behavior, restaurant performance, payment trends, and delivery efficiency using Python, Pandas, NumPy, SQL concepts, and data visualization techniques.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">Pandas</span>
+                            <span class="tool-tag">NumPy</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Matplotlib</span>
+                            <span class="tool-tag">Statistics</span>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="openProjectModal('Food Delivery Data Analysis', 'Data Analytics', 'A comprehensive data analytics project exploring food delivery operations, customer behavior, restaurant performance, payment trends, and delivery efficiency using Python, Pandas, NumPy, SQL concepts, and data visualization techniques.', 'Python, Pandas, NumPy, SQL, Matplotlib, Statistics', 'null', 'null')" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Soon....
+                            </button>
+                            <a href="null" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i>Soon....
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="certificates">
+        <div class="container" style="text-align: center;">
+            <div class="section-title">
+                <span class="subtitle">Qualifications & Verified Credentials</span>
+                <h2>Certificates & Specializations</h2>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 3rem 2rem; max-width: 720px; margin: 0 auto; box-shadow: var(--shadow-card);">
+                <div style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem; color: var(--text-main);">View Verified Certificates on LinkedIn</h3>
+                <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 2rem;">
+                    All my verified certifications, badges, and credentials in Data Analytics, Full-Stack Development, Python, and Automation are documented directly on my LinkedIn profile.
+                </p>
+                <a href="https://www.linkedin.com/in/ahmed-mubarak-8564aa303" target="_blank" class="btn btn-gold" style="font-size: 1.1rem; padding: 0.9rem 2.2rem;">
+                    <i class="fab fa-linkedin"></i> View Certificates on LinkedIn <i class="fas fa-external-link-alt" style="font-size: 0.85rem; margin-left: 0.3rem;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section terminal-section" id="terminal">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Interactive CLI</span>
+                <h2>Cyber Terminal Easter Egg</h2>
+            </div>
+
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <div class="terminal-title">ahmedmubarak@kali-linux: ~ (bash)</div>
+                    <div><i class="fas fa-shield-alt" style="color: var(--primary);"></i></div>
+                </div>
+                <div class="terminal-body" id="terminalOutput">
+                    <div class="terminal-line">Welcome to Ahmed Mubarak's Cyber Terminal v2.6.0 [Kali Linux Core]</div>
+                    <div class="terminal-line">Type <span class="prompt-user">help</span> to view available commands.</div>
+                    <br>
+                </div>
+                <div class="terminal-footer" style="padding: 0 1.5rem 1rem 1.5rem;">
+                    <div class="terminal-input-line">
+                        <span class="prompt-user">ahmed</span>@<span class="prompt-host">mubarak-pc</span>:<span class="prompt-dir">~</span>$&nbsp;
+                        <input type="text" id="terminalInput" class="terminal-input" placeholder="type 'help', 'whoami', 'skills', 'projects', 'cv', 'contact'..." autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Get In Touch</span>
+                <h2>Contact Ahmed Mubarak</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <a href="https://wa.me/message/45YZ4FUMDMEJN1" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <label>WhatsApp</label>
+                            <p>Send Direct Message</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:mubarakxahmed2010@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <label>Gmail</label>
+                            <p>mubarakxahmed2010@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/+201553007202" target="_blank" class="contact-card">
+                        <div class="contact-icon" style="color: var(--primary);">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <div class="contact-details">
+                            <label>Telegram</label>
+                            <p>Send Message</p>
+                        </div>
+                    </a>
+
+                    <div onclick="copyDiscordHandle(event)" class="contact-card" style="cursor: pointer;" title="Click to copy Discord handle">
+                        <div class="contact-icon" style="color: var(--gold);">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="contact-details">
+                            <label>Discord</label>
+                            <p id="discordHandleText">mubarak3_3</p>
+                        </div>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/ahmed-mubarak-8564aa303" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <label>LinkedIn</label>
+                            <p>Ahmed Mubarak</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ahmedmubarak2010" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <label>GitHub</label>
+                            <p>github.com/ahmedmubarak2010</p>
+                        </div>
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="formName">Your Name</label>
+                        <input type="text" id="formName" class="form-control" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formEmail">Your Email</label>
+                        <input type="email" id="formEmail" class="form-control" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formSubject">Subject</label>
+                        <input type="text" id="formSubject" class="form-control" placeholder="Data Analytics / Web Development Project" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formMessage">Message</label>
+                        <textarea id="formMessage" class="form-control" placeholder="Describe your project or inquiry..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message via WhatsApp / Email
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="font-size: 1.1rem; font-family: var(--font-mono); color: var(--gold); margin-bottom: 0.6rem; font-weight: 600;">
+                𓂀 『Pharaoh of the Digital Age』
+            </div>
+            <p>&copy; 2026 <span class="gold-accent">Ahmed Mubarak</span>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
