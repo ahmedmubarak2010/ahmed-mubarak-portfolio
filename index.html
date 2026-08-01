@@ -108,27 +108,34 @@
     </section>
 
     <section class="section" id="about">
-        <div class="container">
-            <div class="stats-strip">
-                <div class="stat-card">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Data Reports & Dashboards</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">12+</div>
-                    <div class="stat-label">Web Apps & Interfaces</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">n8n Automated Workflows</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Data & Code Accuracy</div>
-                </div>
+    <div class="container">
+
+        <div class="stats-strip">
+
+            <div class="stat-card">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Years of Experience</div>
             </div>
+
+            <div class="stat-card">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Certified Courses & Certifications</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">International Competitions</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Continuous Learning</div>
+            </div>
+
         </div>
-    </section>
+
+    </div>
+</section>
 
     <section class="section" id="skills">
         <div class="container">
@@ -451,14 +458,69 @@
                 <button class="filter-btn" data-filter="data">Data Analytics</button>
                 <button class="filter-btn" data-filter="python">Python</button>
                 <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="n8n">n8n Automation</button>
                 <button class="filter-btn" data-filter="security">Security & Tools</button>
             </div>
 
             <div class="projects-grid">
 
-                
+                <div class="project-card" data-category="security">
+                    <div class="project-img-wrapper">
+                        <span class="badge project-category-badge">Security & Tools</span>
+                        <img src="assets\creative-minds.png" onerror="this.onerror=null; this.src='assets/project-web.svg';" alt="React & Java Web App" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">ERP Product App</h3>
+                        <p class="project-desc">
+                            Creative Minds is an AI-inspired cybersecurity platform designed to analyze phishing emails and evaluate password strength through a modern, interactive dashboard.
+                            It helps users improve their cybersecurity awareness, identify suspicious emails, and create stronger passwords.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-tag">HTML5</span>
+                            <span class="tool-tag">JavaScript</span>
+                            <span class="tool-tag">CSS3</span>
+                            <span class="tool-tag">Git & GitHub</span>
+                            <span class="tool-tag">AI Security</span>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="openProjectModal('Creative Minds', 'Security & Tools', 'Creative Minds is an AI-inspired cybersecurity platform designed to analyze phishing emails and evaluate password strength through a modern, interactive dashboard. It helps users improve their cybersecurity awareness, identify suspicious emails, and create stronger passwords.', 'JavaScript, HTML5, CSS3 ,AI Security, Git & GitHub', 'https://creative-minds-delta.vercel.app/', 'https://github.com/ahmedmubarak2010/creative-minds')" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                            <a href="https://github.com/ahmedmubarak2010/creative-minds" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card" data-category="data">
+                    <div class="project-img-wrapper">
+                        <span class="badge badge-gold project-category-badge">Data Analytics</span>
+                        <img src="assets\image.png" onerror="this.onerror=null; this.src='assets/project-data.svg';" alt="E-Commerce Data Analytics" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Food Delivery Data Analysis</h3>
+                        <p class="project-desc">
+                            A comprehensive data analytics project exploring food delivery operations, customer behavior, restaurant performance, payment trends, and delivery efficiency using Python, Pandas, NumPy, SQL concepts, and data visualization techniques.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">Pandas</span>
+                            <span class="tool-tag">NumPy</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Matplotlib</span>
+                            <span class="tool-tag">Statistics</span>
+                        </div>
+                        <div class="project-actions">
+                            <button onclick="openProjectModal('Food Delivery Data Analysis', 'Data Analytics', 'A comprehensive data analytics project exploring food delivery operations, customer behavior, restaurant performance, payment trends, and delivery efficiency using Python, Pandas, NumPy, SQL concepts, and data visualization techniques.', 'Python, Pandas, NumPy, SQL, Matplotlib, Statistics', 'null', 'null')" class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Soon....
+                            </button>
+                            <a href="null" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i>Soon....
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="project-card" data-category="web">
                     <div class="project-img-wrapper">
                         <span class="badge project-category-badge">Web Development</span>
@@ -566,35 +628,6 @@
                             </button>
                             <a href="https://github.com/ahmedmubarak2010/Zombie-Survival-Quiz-Game" target="_blank" class="btn btn-outline btn-sm">
                                 <i class="fab fa-github"></i> GitHub Repo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="data">
-                    <div class="project-img-wrapper">
-                        <span class="badge badge-gold project-category-badge">Data Analytics</span>
-                        <img src="assets\image.png" onerror="this.onerror=null; this.src='assets/project-data.svg';" alt="E-Commerce Data Analytics" class="project-img">
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Food Delivery Data Analysis</h3>
-                        <p class="project-desc">
-                            A comprehensive data analytics project exploring food delivery operations, customer behavior, restaurant performance, payment trends, and delivery efficiency using Python, Pandas, NumPy, SQL concepts, and data visualization techniques.
-                        </p>
-                        <div class="project-tools">
-                            <span class="tool-tag">Python</span>
-                            <span class="tool-tag">Pandas</span>
-                            <span class="tool-tag">NumPy</span>
-                            <span class="tool-tag">SQL</span>
-                            <span class="tool-tag">Matplotlib</span>
-                            <span class="tool-tag">Statistics</span>
-                        </div>
-                        <div class="project-actions">
-                            <button onclick="openProjectModal('Food Delivery Data Analysis', 'Data Analytics', 'A comprehensive data analytics project exploring food delivery operations, customer behavior, restaurant performance, payment trends, and delivery efficiency using Python, Pandas, NumPy, SQL concepts, and data visualization techniques.', 'Python, Pandas, NumPy, SQL, Matplotlib, Statistics', 'null', 'null')" class="btn btn-primary btn-sm">
-                                <i class="fas fa-eye"></i> Soon....
-                            </button>
-                            <a href="null" target="_blank" class="btn btn-outline btn-sm">
-                                <i class="fab fa-github"></i>Soon....
                             </a>
                         </div>
                     </div>
